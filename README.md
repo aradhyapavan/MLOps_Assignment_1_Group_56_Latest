@@ -88,5 +88,5 @@ The CI/CD pipeline is configured using GitHub Actions. The workflow is defined i
 ![GitHub Actions](img/Github_Actions.jpeg)
 
 ### Flask Application
-![Flask App](flask_app.png)
+![Flask App](img/Flask_App.png)
 
