@@ -43,6 +43,10 @@ jobs:
     - name: Run tests with unittest
       run: python -m unittest discover
 
+    - name: Train model
+      run: |
+        python train_model.py
+
     - name: Start MLflow server
       run: |
         nohup mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./mlruns --host 127.0.0.1 --port 5000 &
