@@ -40,21 +40,17 @@ jobs:
         pip install flake8
         flake8 --max-line-length=100 .
 
-    - name: Run tests with unittest
-      run: python -m unittest discover
-
-    - name: Train model
-      run: |
-        python train_model.py
-
     - name: Start MLflow server
       run: |
         nohup mlflow server --backend-store-uri sqlite:///mlflow.db --default-artifact-root ./mlruns --host 127.0.0.1 --port 5000 &
       env:
         MLFLOW_TRACKING_URI: http://127.0.0.1:5000
 
-    - name: Run MLflow Tracking
+    - name: Train model
       run: python train_model.py
+
+    - name: Run tests with unittest
+      run: python -m unittest discover
 
     - name: Evaluate model
       run: python evaluate_model.py
