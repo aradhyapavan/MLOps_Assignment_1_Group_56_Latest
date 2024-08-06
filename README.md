@@ -1,4 +1,5 @@
 
+---
 
 # MLOps Assignment 1 - Group 56
 
@@ -14,7 +15,15 @@ This repository contains the MLOps Assignment 1 for Group 56. The goal of this a
 - **`evaluate_model.py`**: Script for evaluating the trained model and logging the evaluation metrics using MLflow.
 - **`Dockerfile`**: Instructions to build the Docker image for the Flask application.
 - **`requirements.txt`**: List of Python dependencies required to run the project.
-- **`.github/workflows/MLOps_Assignment_1.yml`**: GitHub Actions workflow file that defines the CI/CD pipeline.
+- **`.github/workflows/ci-cd.yml`**: GitHub Actions workflow file that defines the CI/CD pipeline. You can view it [here](https://github.com/aradhyapavan/MLOps_Assignment_1_Group_56_Latest/blob/main/.github/workflows/ci-cd.yml).
+- **`sampledatasets/`**: Contains the dataset used for the project (`liver_disease_1.csv`).
+- **`templates/`**: HTML templates for the Flask application (`index.html`).
+- **`models/`**: Directory containing the trained model (`model.joblib`).
+- **`mlruns/`**: Directory used by MLflow to store experiment runs.
+- **`train_output/`**: Directory where training data outputs (`X_train.csv`, `Y_train.csv`) are stored.
+- **`test_output/`**: Directory where test data outputs (`X_test.csv`, `Y_test.csv`) are stored.
+- **`output/`**: Directory where final model predictions are stored (`final_predicted_output.csv`).
+- **`final_output/`**: Another directory for storing final output files.
 
 ## Setup Instructions
 
@@ -28,7 +37,7 @@ This repository contains the MLOps Assignment 1 for Group 56. The goal of this a
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/MLOps_Assignment_1_Group_56_Latest.git
+   git clone https://github.com/aradhyapavan/MLOps_Assignment_1_Group_56_Latest.git
    cd MLOps_Assignment_1_Group_56_Latest
    ```
 
@@ -68,7 +77,7 @@ This repository contains the MLOps Assignment 1 for Group 56. The goal of this a
 
 ## CI/CD Pipeline
 
-The CI/CD pipeline is configured using GitHub Actions. The workflow is defined in the `.github/workflows/MLOps_Assignment_1.yml` file. The pipeline performs the following steps:
+The CI/CD pipeline is configured using GitHub Actions. The workflow is defined in the `.github/workflows/ci-cd.yml` file. The pipeline performs the following steps:
 
 1. **Checkout code**: Clones the repository.
 2. **Set up Python 3.11**: Configures the Python environment.
@@ -90,3 +99,6 @@ The CI/CD pipeline is configured using GitHub Actions. The workflow is defined i
 ### Flask Application
 ![Flask App](img/Flask_App.png)
 
+ny questions or concerns, please contact Aradhya Pavan at [email@example.com](mailto:email@example.com).
+
+---
