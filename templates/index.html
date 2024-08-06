@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Prediction App</title>
+</head>
+<body>
+    <h1>Predict using Flask App</h1>
+    <form method="POST" action="/predict">
+        <label for="X1-high_level">X1-high_level:</label>
+        <input type="number" step="any" name="X1-high_level" id="X1-high_level" required><br><br>
+        <label for="X2-low_level">X2-low_level:</label>
+        <input type="number" step="any" name="X2-low_level" id="X2-low_level" required><br><br>
+        <input type="submit" value="Predict">
+    </form>
+    <h2>{{ prediction_text }}</h2>
+</body>
+</html>

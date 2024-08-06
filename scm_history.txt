@@ -1,0 +1,17 @@
+fcaae12 adding mlflow
+5d49619 training model path update
+4204d48 Merge pull request #3 from jes05/initialbranch_v1
+bc6b8cf updating latest version for all
+040c5a4 updating scikit learn version
+ce0e985 updating file path
+1554b52 Merge pull request #1 from jes05/initialbranch_v1
+36aafd1 updating filepaths
+05e0aed Update ci-cd.yml
+37a2e62 Update ci-cd.yml
+1772897 updating files and segregating them
+8d07e2a adding github action
+538424e requirements.txt
+538e132 uploading_data
+89637c5 upload model
+93f10c6 Delete forestfire_linear_regression_model.ipynb
+fb7cef6 model upload
